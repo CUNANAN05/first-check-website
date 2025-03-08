@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bia's Kitchen Catering Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./imagesss/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(233, 18, 18);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 12;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: rgb(92, 91, 91);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .nav-links {
+                width: 100%;
+                padding: 10px 0;
+                display: block;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+
+        section {
+            padding: 40px 10%;
+            text-align: center;
+            margin-top: 30px;
+            color: rgb(129, 19, 19);
+       
+        }
+
+        .info {
+            font-weight: 500;
+            color: rgb(253, 249, 249);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .info h1 {
+            color: rgb(161, 8, 8);
+            font-size: 36px;
+            padding: 2rem 0;
+            font-weight: 600;
+        }
+
+        .info p {
+            margin-top: 1.5rem;
+            font-size: 25px;
+            font-weight: 400;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        
+
+
+        @media (max-width: 760px) {
+            section {
+                padding: 30px 5%;
+            }
+
+            .info h1 {
+                font-size: 28px;
+            }
+
+            .info p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="about">Bia's Kitchen Catering Services</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="about">
+        <div class="info">
+            <h1>About Bia's Kitchen Catering</h1>
+            <p>This business started because of our passion for cooking delicious food, especially coming from the province of Pampanga. My inspiration for building a catering services business is my grandfather, who also loved food
+            Unfortunately, he has passed away, but his love for food continues to inspire us. His fondness for food created some of our best memories, and this journey is far beyond just a business it is a personal tribute to him.
+            Every meal we prepare is made with love and dedication, and we aim to pass on these beautiful traditions through our catering services.
+            Through our services, we hope to connect people, create memorable moments, and keep alive the tradition of sharing wonderful food with those who matter most.</p>
+  
+        </div>
+    </section>
+
+</body>
+</html>

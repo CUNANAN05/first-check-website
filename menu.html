@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bia's Kitchen Catering Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./imagesss/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+           
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(233, 18, 18);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 12;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: rgb(92, 91, 91);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .nav-links {
+                width: 100%;
+                padding: 10px 0;
+                display: block;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+
+        .flex-container {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            color: red;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size:40px;
+            color: whitesmoke;
+            font-weight: 400;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            font-weight: 300;
+            padding: 30px;
+        }
+
+        h3 {
+          font-size: 20px;
+            font-weight: 300;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 15px;
+        }
+
+        th {
+            font-size: 30px;
+            color: white;
+            background-color: rgb(197, 29, 29);
+        }
+
+        
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 25px;
+            color: white;
+            font-weight: 400;
+        }
+
+       
+        @media (max-width: 768px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .menu-item {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .menu-item img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="menu">Bia's Kitchen Catering Services</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="flex-container">
+        <h1>On The Menu</h1>
+    </div>
+>
+    <table>
+        <tr>
+          <th colspan="2">1. Appetizer</th>
+        </tr>
+        <tr>
+            <td class="menu-item">
+                <img src="./imagesss/appetizer1.jpg" alt="Ensaladang Talong">
+                <h3>Ensaladang Talong</h3>
+            </td>
+            <td class="menu-item">
+                <img src="./imagesss/appetizer2.jpg" alt="Lumpiang Shanghai">
+                <h3>Lumpiang Shanghai</h3>
+            </td>
+        </tr>
+    </table>
+
+ 
+    <table>
+        <tr>
+          <th colspan="3">2. Main Dish</th>
+        </tr>
+        <tr>
+            <td class="menu-item">
+                <img src="./imagesss/maindish1.jpg" alt="Beef Kaldereta">
+                <h3>Beef Kaldereta</h3>
+            </td>
+            <td class="menu-item">
+                <img src="./imagesss/maindish2.jpg" alt="Special Pancit">
+                <h3>Special Pancit</h3>
+            </td>
+            <td class="menu-item">
+                <img src="./imagesss/maindish3.jpg" alt="Sisig">
+                <h3>Sisig</h3>
+            </td>
+        </tr>
+    </table>
+
+    
+    <table>
+        <tr>
+          <th colspan="2">3. Dessert</th>  
+        </tr>
+        <tr>
+            <td class="menu-item">
+                <img src="./imagesss/dessert1.jpg" alt="Sapin-Sapin">
+                <h3>Sapin-Sapin</h3>
+            </td>
+            <td class="menu-item">
+                <img src="./imagesss/dessert2.jpg" alt="Halo-Halo">
+                <h3>Halo-Halo</h3>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bia's Kitchen Catering Services</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./imagesss/background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+           
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(233, 18, 18);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 12;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: rgb(92, 91, 91);
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 760px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .nav-links {
+                width: 100%;
+                padding: 10px 0;
+                display: block;
+                text-align: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            margin: 4rem auto;
+            padding: 3rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        .contact h1 {
+            color: rgb(170, 12, 12);
+            margin-bottom: 2rem;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .contact h3 {
+            font-size: 24px;
+            margin: 1rem 0;
+            font-weight: 500;
+        }
+
+        .contact p {
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Info Styles */
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+        }
+
+        .contact-info a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: rgb(233, 18, 18);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: rgb(233, 18, 18);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(170, 12, 12);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact {
+                padding: 2rem;
+                margin: 2rem;
+            }
+
+            .contact h1 {
+                font-size: 30px;
+            }
+
+            .contact h3 {
+                font-size: 20px;
+            }
+
+            .contact p {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="contact">Bia's Kitchen Catering Services</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contact">
+        <h1>If You Inquire, Please Contact Us</h1>
+        <h3>📞 09196016344</h3>
+        <p>Phone Number</p>
+        <h3>📧 biascateringservices@gmail.com</h3>
+        <p>Email Address</p>
+        <h3>💬 Bia's Catering Services</h3>
+        <p>Facebook Page</p>
+      
+    </div>
+
+</body>
+</html>
